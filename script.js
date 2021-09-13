@@ -1,4 +1,3 @@
-const quotesCont = document.querySelector('#quotes');
 const button = document.querySelector('button');
 const h1 = document.querySelector('h1');
 const h3 = document.querySelector('h3');
