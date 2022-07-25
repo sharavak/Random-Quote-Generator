@@ -2,9 +2,9 @@ const button = document.querySelector('button');
 const h1 = document.querySelector('h1');
 const h3 = document.querySelector('h3');
 const getRandomQuotes=async ()=> {
-    const url = await fetch('http://quotes.stormconsultancy.co.uk/random.json')
+    const url = await fetch('https://api.quotable.io/random')
     const data = await url.json()
-    h1.textContent = '"' + data.quote;
+    h1.textContent = '"' + data.content;
     h3.innerText = data.author;
 }
 const fonts=['Arial, sans-serif','Gill Sans, sans-serif','sans-serif','Palatino, serif','New Century Schoolbook, serif','Fixed, monospace','Courier New, monospace','Coronetscript, cursive','Zapf Chancery, cursive','Lucidatypewriter, monospace','Andale Mono, monospace','revert']
